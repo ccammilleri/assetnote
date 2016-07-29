@@ -133,7 +133,7 @@ user_datastore.create_user(email='shubs', password='testing')
 
 6. Install the required headers for MySQL-python and install python-bcrypt:
 
-`apt-get install python-dev libmysqlclient-dev`
+`apt-get install python-dev libmysqlclient-dev libffi-dev`
 
 `apt-get install python-bcrypt`
 
