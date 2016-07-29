@@ -104,7 +104,7 @@ Visit https://pushover.net/login and sign up:
 
 ```
 SECRET_KEY = 'CHANGEME'
-SQLALCHEMY_DATABASE_URI = 'mysql://root:test@localhost:3389/assetnote'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:test@localhost:3306/assetnote'
 SECURITY_PASSWORD_SALT = 'CHANGEME'
 PUSHOVER_KEY = 'PUSHOVERKEY'
 ```
@@ -118,7 +118,7 @@ Put your pushover's application key in `PUSHOVER_KEY`.
 Line 21: Modify this to use your database credentials instead
 
 ```
-engine = sqlalchemy.create_engine('mysql://root:testing@localhost:3389/assetnote')
+engine = sqlalchemy.create_engine('mysql://root:testing@localhost:3306/assetnote')
 ```
 
 Line 59: Change the username and password that will be used to login to assetnote
@@ -134,6 +134,7 @@ user_datastore.create_user(email='shubs', password='testing')
 6. Install the required headers for MySQL-python and install python-bcrypt:
 
 `apt-get install python-dev libmysqlclient-dev`
+
 `apt-get install python-bcrypt`
 
 7. Install the required modules:
