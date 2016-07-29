@@ -18,7 +18,7 @@ app = Flask(__name__)
 app.config.from_object('config')
 db = SQLAlchemy(app)
 csrf = SeaSurf(app)
-engine = sqlalchemy.create_engine('mysql://root:testing@localhost:3389/assetnote')
+engine = sqlalchemy.create_engine('mysql://root:testing@localhost:3306/assetnote')
 connection = engine.connect()
 
 roles_users = db.Table('roles_users',
